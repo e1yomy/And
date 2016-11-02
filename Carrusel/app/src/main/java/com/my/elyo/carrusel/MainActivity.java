@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     String ruta;
     ImageSwitcher switcher;
+    public byte estado;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,14 +32,20 @@ public class MainActivity extends AppCompatActivity {
                 return new ImageView(MainActivity.this);
             }
         });
+        
 
-        try {
-            ruta = Environment.getExternalStorageDirectory().getAbsolutePath() + "/F/";
-        }
-        catch (Exception e)
-        {
-            ruta=Environment.getRootDirectory().getAbsolutePath()+"/F/";
-        }
+
     }
 
+    public byte sD(){
+        String stadoSD = Environment.getExternalStorageState();
+        if (stadoSD.equals(Environment.MEDIA_MOUNTED)) {
+            return 1;
+        }
+        else if (stadoSD.equals(Environment.MEDIA_MOUNTED_READ_ONLY)) {
+            return 2;
+        }
+        else{
+            return 0;
+        }
 }

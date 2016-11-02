@@ -21,7 +21,8 @@
         <ImageSwitcher
             android:layout_width="match_parent"
             android:layout_height="382dp"
-            android:layout_weight="0.65" />
+            android:layout_weight="0.65"
+            android:id="@+id/switcher"/>
 
     </LinearLayout>
 </RelativeLayout>
