@@ -8,6 +8,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -16,6 +17,7 @@ import android.widget.ViewSwitcher;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     public byte estado;
     String[] ms= {"Tarjeta SD montada y lista","Tarjeta SD montada con permisos de solo lectura","Sin tarjeta SD"};
     File f;
+
+    ArrayList<String> fi = new ArrayList<String>();// list of file paths
+    File[] listFile=null;
 
 
     /////////Camara////////////
@@ -38,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         msj();
         dirSD();
 
@@ -57,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 toast = Toast.makeText(getApplicationContext(), "Directorio ya existente", Toast.LENGTH_SHORT);
             }
+            getImagenes();
             toast.show();
         }
     }
@@ -75,7 +82,16 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(getApplicationContext(), ms[estado], Toast.LENGTH_SHORT);
         toast.show();
     }
-
+    public void getImagenes()
+    {
+        if (f.isDirectory() && f.exists()) {
+            listFile = f.listFiles();
+            if (listFile != null)
+                for (int i = 0; i < listFile.length; i++) {
+                    fi.add(listFile[i].getAbsolutePath());
+                }
+        }
+    }
 
     /////////Camara////////////
    public void boton(View view){
