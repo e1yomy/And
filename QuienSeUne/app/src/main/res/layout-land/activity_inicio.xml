@@ -16,6 +16,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
+
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -26,31 +28,33 @@
             android:gravity="center_vertical"
             >
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text="Crear"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/button3"
+                    android:textSize="25sp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="Unirse"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/button4"
+                    android:textSize="25sp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="73dp" />
-
-            <Button
-                android:text="Crear"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:id="@+id/button3"
-                android:textSize="25sp"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                />
-
-            <Button
-                android:text="Unirse"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:id="@+id/button4"
-                android:textSize="25sp"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="52dp" />
+                android:layout_height="50dp" />
 
             <Button
                 android:text="Cerrar sesión"
@@ -59,6 +63,7 @@
                 android:id="@+id/button10"
                 style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
                 />
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

@@ -79,7 +79,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="159dp" />
+                android:layout_height="89dp" />
 
             <Button
                 android:text="Registrarse"
