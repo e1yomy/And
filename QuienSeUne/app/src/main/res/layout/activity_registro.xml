@@ -71,7 +71,7 @@
                 android:ems="10"
                 android:id="@+id/editText5"
                 android:hint="Nombre (s)"
-                android:paddingBottom="20dp"
+                android:paddingBottom="15dp"
                 android:textSize="20sp" />
 
             <EditText
@@ -81,7 +81,7 @@
                 android:ems="10"
                 android:id="@+id/editText6"
                 android:hint="Apellido (s)"
-                android:paddingBottom="20dp"
+                android:paddingBottom="15dp"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -90,6 +90,14 @@
                 android:layout_height="match_parent"
                 android:textAlignment="center">
 
+                <TextView
+                    android:text="Sexo: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:layout_weight="1"
+                    android:textSize="20sp" />
+
                 <Spinner
                     android:layout_width="175dp"
                     android:id="@+id/spinner"
@@ -97,16 +105,28 @@
 
                     android:layout_height="40dp" />
 
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Edad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:layout_weight="1"
+                    android:textSize="20sp" />
+
                 <Spinner
-                    android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:id="@+id/spinner2"
                     android:entries="@array/edad"
-                    android:layout_weight="1"
 
-                    />
-
-
+                    android:layout_width="175dp" />
             </LinearLayout>
 
             <EditText
@@ -116,12 +136,12 @@
                 android:ems="10"
                 android:id="@+id/editText7"
                 android:hint="Ciudad"
-                android:paddingBottom="20dp"
+                android:paddingBottom="15dp"
                 android:textSize="20sp" />
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="112dp"
+                android:layout_height="95dp"
                 android:inputType="textMultiLine"
                 android:ems="10"
                 android:id="@+id/editText8"
