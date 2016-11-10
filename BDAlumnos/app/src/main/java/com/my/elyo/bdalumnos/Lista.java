@@ -4,8 +4,16 @@ import android.content.Context;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class Lista extends AppCompatActivity {
     int accion;
@@ -15,43 +23,111 @@ public class Lista extends AppCompatActivity {
     Context c =this;
     ListView l;
     TextView t;
+    boolean modif=false, elim=false;
+    Button b1,b2;
+    String nc="", no="", ap="";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista);
         l=(ListView)findViewById(R.id.listView);
         t=(TextView)findViewById(R.id.textView4);
-        BD da= new BD(c);
-        Cursor cr = da.getInfo(da);
-        //Cursor cr = da.vertodo(da);
-        String nc="";
-        String no="";
-        String ap="";
-        String it0="";
-        String it1="";
-        //t.setText(cr.toString());
+        b1=(Button)findViewById(R.id.button5);
+        b2=(Button)findViewById(R.id.button6);
+        cargarDatos();
+        SetItemClic();
+    }
+    private void SetItemClic() {
+        l.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View itemC, int position, long id) {
+                TextView t=(TextView) itemC;
+                nc=t.getText().toString().substring(0,8);
+                Toast.makeText(getBaseContext(), nc, Toast.LENGTH_SHORT).show();
+                Accion();
+            }
+        });
+    }
+
+    private void Accion() {
+        if(elim)
+        {
+            Toast.makeText(getBaseContext(), "Elim", Toast.LENGTH_SHORT).show();
+        }
+        else if (modif){
+            Toast.makeText(getBaseContext(), "Modif", Toast.LENGTH_SHORT).show();
+        }
+        modif=false;
+        elim=false;
+        setTextB();
+    }
+
+
+    public byte dividir(String s){
+        for(byte i=12;i<s.toCharArray().length;i++)
+        {
+            if(",".equals(s.toCharArray()[i]))
+                return i;
+        }
+        return (byte) (s.length()-1);
+    }
+
+    public void cargarDatos(){
+        ArrayList<String> ar = new ArrayList<>();
+        BD da = new BD(c);
+        Cursor cr = da.vertodo(da.getReadableDatabase());
 
         try {
             if (cr.moveToFirst()) {
                 do {
-                    nc = cr.getString(0);
-                    no = cr.getString(1);
-                    ap = cr.getString(2);
-
-                    it0 = nc;
-                    it1 = no + " " + ap;
-                    t.setText(t.getText().toString() + "   " + it0 + " - " + it1);
-
+                    ar.add(cr.getString(0) + " - " + cr.getString(2)+ ", " + cr.getString(1));
                 } while (cr.moveToNext());
             }
-        }
-        catch(Exception ex){
+        } catch (Exception ex) {
             t.setText(ex.getMessage());
         }
+
+        final ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, ar);
+        l.setAdapter(adapter);
     }
-
-
-
-
+    public void Modificar(View view){
+        if(!modif)
+        {
+            Toast.makeText(getBaseContext(), "Seleccione el elemento que quiere modificar o presione de nuevo para cancelar.", Toast.LENGTH_SHORT).show();
+            modif=true;
+            elim=false;
+        }
+        else
+        {
+            Toast.makeText(getBaseContext(), "Modificacion cancelada.", Toast.LENGTH_SHORT).show();
+            modif=false;
+        }
+        setTextB();
+    }
+    public void Eliminar(View view){
+        if(!elim)
+        {
+            Toast.makeText(getBaseContext(), "Seleccione el elemento que quiere eliminar o presione de nuevo para cancelar.", Toast.LENGTH_SHORT).show();
+            elim=true;
+            modif=false;
+        }
+        else
+        {
+            Toast.makeText(getBaseContext(), "Eliminacion cancelada.", Toast.LENGTH_SHORT).show();
+            elim=false;
+        }
+        setTextB();
+    }
+    public void setTextB(){
+        if (!modif)
+            b1.setText("Modificar");
+        else
+            b1.setText("Cancelar");
+        if(!elim)
+            b2.setText("Eliminar");
+        else
+            b2.setText("Cancelar");
+    }
 
 }

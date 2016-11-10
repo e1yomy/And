@@ -52,12 +52,9 @@ public class Registro extends AppCompatActivity {
         BD b = new BD(context);
         //b.InsertarDatos(b, s[0], s[1], s[2]);
         b.insert(b.getWritableDatabase(),s[0], s[1], s[2]);
-        Toast.makeText(getBaseContext(),"" , Toast.LENGTH_SHORT).show();
+        Toast.makeText(getBaseContext(),"Alumno agregado" , Toast.LENGTH_SHORT).show();
 
-        e1.setText("");
-        e2.setText("");
-        e3.setText("");
-        e1.requestFocus();
+      Limpiar(new View(context));
     }
     public void Limpiar(View view){
         e1.setText("");
