@@ -21,9 +21,8 @@ public class Lista extends AppCompatActivity {
         setContentView(R.layout.activity_lista);
         l=(ListView)findViewById(R.id.listView);
         t=(TextView)findViewById(R.id.textView4);
-
-        AlumnosBBDD da= new AlumnosBBDD(c,"kardex",null,1);
-        Cursor cr = da.vertodo(da.getReadableDatabase());
+        BD da= new BD(c);
+        Cursor cr = da.getInfo(da);
         //Cursor cr = da.vertodo(da);
         String nc="";
         String no="";
@@ -38,9 +37,10 @@ public class Lista extends AppCompatActivity {
                     nc = cr.getString(0);
                     no = cr.getString(1);
                     ap = cr.getString(2);
+
                     it0 = nc;
                     it1 = no + " " + ap;
-                    t.setText(t.getText().toString() + "\n"+ it0 + " - " + it1);
+                    t.setText(t.getText().toString() + "   " + it0 + " - " + it1);
 
                 } while (cr.moveToNext());
             }

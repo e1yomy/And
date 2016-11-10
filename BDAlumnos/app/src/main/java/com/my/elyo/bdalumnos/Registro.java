@@ -49,7 +49,7 @@ public class Registro extends AppCompatActivity {
                 return;
             }
         }
-        AlumnosBBDD b = new AlumnosBBDD(context,"kardex",null,1);
+        BD b = new BD(context);
         //b.InsertarDatos(b, s[0], s[1], s[2]);
         b.insert(b.getWritableDatabase(),s[0], s[1], s[2]);
         Toast.makeText(getBaseContext(),"" , Toast.LENGTH_SHORT).show();
