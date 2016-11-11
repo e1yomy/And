@@ -26,7 +26,7 @@ public class Lista extends AppCompatActivity {
     TextView t;
     boolean modif=false, elim=false;
     Button b1,b2;
-    String nc="", no="", ap="";
+    String nc="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,11 +52,14 @@ public class Lista extends AppCompatActivity {
             }
         });
     }
-
     private void Accion() {
         if(elim)
         {
-            Toast.makeText(getBaseContext(), "Elim", Toast.LENGTH_SHORT).show();
+            BD b = new BD(getBaseContext());
+            if(b.borrar(b.getWritableDatabase(),nc))
+                cargarDatos();
+            else
+                Toast.makeText(getBaseContext(),"Algo ha ido mal, contacte al administrador." , Toast.LENGTH_SHORT).show();
         }
         else if (modif){
             Intent i = new Intent(this,Modificar.class);
@@ -66,23 +69,14 @@ public class Lista extends AppCompatActivity {
         elim=false;
         setTextB();
     }
-
-
-    public byte dividir(String s){
-        for(byte i=12;i<s.toCharArray().length;i++)
-        {
-            if(",".equals(s.toCharArray()[i]))
-                return i;
-        }
-        return (byte) (s.length()-1);
-    }
-
     public void cargarDatos(){
         ArrayList<String> ar = new ArrayList<>();
         BD da = new BD(c);
         Cursor cr = da.vertodo(da.getReadableDatabase());
 
         try {
+            if(cr.getCount()<1)
+                t.setText("Lista de alumnos vacia.");
             if (cr.moveToFirst()) {
                 do {
                     ar.add(cr.getString(0) + " - " + cr.getString(2)+ ", " + cr.getString(1));
@@ -133,5 +127,7 @@ public class Lista extends AppCompatActivity {
         else
             b2.setText("Cancelar");
     }
+
+
 
 }

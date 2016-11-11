@@ -23,27 +23,24 @@ public class Registro extends AppCompatActivity {
         e2 = (EditText)findViewById(R.id.editText2);
         e3 = (EditText)findViewById(R.id.editText3);
     }
-    public void Registro(View v){
-        String[] s=new String[3];
-        s[0]= e1.getText().toString();
-        s[1]= e2.getText().toString();
-        s[2]= e3.getText().toString();
-        if(s[0].length()!=8)
-        {
+    public void Registro(View v) {
+        String[] s = new String[3];
+        s[0] = e1.getText().toString();
+        s[1] = e2.getText().toString();
+        s[2] = e3.getText().toString();
+        if (s[0].length() != 8) {
             Toast.makeText(getBaseContext(), "Numero de control no valido", Toast.LENGTH_SHORT).show();
             return;
         }
-        if(s[1].length()<3 )
-        {
+        if (s[1].length() < 3) {
             Toast.makeText(getBaseContext(), "Verificar nombres ", Toast.LENGTH_SHORT).show();
             return;
         }
-        if(s[2].length()<3 )
-        {
+        if (s[2].length() < 3) {
             Toast.makeText(getBaseContext(), "Verificar apellidos ", Toast.LENGTH_SHORT).show();
             return;
         }
-        for(byte i=0;i<s.length;i++) {
+        for (byte i = 0; i < s.length; i++) {
             if (s[i].equals("")) {
                 Toast.makeText(getBaseContext(), "Verificar datos ingresdos", Toast.LENGTH_SHORT).show();
                 return;
@@ -51,10 +48,13 @@ public class Registro extends AppCompatActivity {
         }
         BD b = new BD(contextR);
         //b.InsertarDatos(b, s[0], s[1], s[2]);
-        b.insert(b.getWritableDatabase(),s[0], s[1], s[2]);
-        Toast.makeText(getBaseContext(),"Alumno agregado" , Toast.LENGTH_SHORT).show();
+        if (!b.insert(b.getWritableDatabase(), s[0], s[1], s[2]))
+            Toast.makeText(getBaseContext(), "Alumno ya existente.", Toast.LENGTH_SHORT).show();
+        else {
+            Toast.makeText(getBaseContext(), "Alumno agregado.", Toast.LENGTH_SHORT).show();
+            Limpiar(new View(contextR));
+        }
 
-      Limpiar(new View(contextR));
     }
     public void Limpiar(View view){
         e1.setText("");

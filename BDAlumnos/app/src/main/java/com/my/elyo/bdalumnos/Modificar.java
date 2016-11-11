@@ -56,20 +56,11 @@ public class Modificar extends AppCompatActivity {
             Toast.makeText(getBaseContext(), "Verificar apellidos ", Toast.LENGTH_SHORT).show();
             return;
         }
-        for(byte i=0;i<s.length;i++) {
-            if (s[i].equals("")) {
-                Toast.makeText(getBaseContext(), "Verificar datos ingresdos", Toast.LENGTH_SHORT).show();
-                return;
-            }
-        }
         BD b = new BD(context);
-        //b.InsertarDatos(b, s[0], s[1], s[2]);
-        b.actualizar(b.getWritableDatabase(),s);
-
-        //b.insert(b.getWritableDatabase(),s[0], s[1], s[2]);
-        Toast.makeText(getBaseContext(),"Alumno actualizado" , Toast.LENGTH_SHORT).show();
-
-
-        //finish();
+        if(b.actualizar(b.getWritableDatabase(),s)) {
+            finish();
+        }
+        else
+            Toast.makeText(getBaseContext(),"Algo ha ido mal, contacte al administrador o verifique los datos." , Toast.LENGTH_SHORT).show();
     }
 }

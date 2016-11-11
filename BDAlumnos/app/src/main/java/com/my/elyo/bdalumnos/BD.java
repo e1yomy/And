@@ -20,8 +20,6 @@ import java.sql.SQLDataException;
 public class BD extends SQLiteOpenHelper {
 
     public static String numero="";
-    public static String nombre="";
-    public static String apellido="";
     public static String error="";
     public static String sel="";
 
@@ -57,12 +55,13 @@ public class BD extends SQLiteOpenHelper {
             return false;
         }
     }
+
     public boolean actualizar(SQLiteDatabase d,String[] s)
     {
         try{
-            d.execSQL("UPDATE alumnos SET nombre='"+s[1]+"' WHERE ncontrol='"+numero+"'");
-            d.execSQL("UPDATE alumnos SET apellido='"+s[2]+"' WHERE ncontrol='"+numero+"'");
             d.execSQL("UPDATE alumnos SET ncontrol='"+s[0]+"' WHERE ncontrol='"+numero+"'");
+            d.execSQL("UPDATE alumnos SET nombre='"+s[1]+"' WHERE ncontrol='"+s[0]+"'");
+            d.execSQL("UPDATE alumnos SET apellido='"+s[2]+"' WHERE ncontrol='"+s[0]+"'");
                     return true;
         }
         catch (Exception e)
@@ -77,11 +76,6 @@ public class BD extends SQLiteOpenHelper {
         return cursor;
     }
 
-    public void setInfo(String a, String s, String d){
-        numero=a;
-        nombre=nombre;
-        apellido=d;
-    }
     public boolean borrar(SQLiteDatabase db,String nc){
         String qu="delete from alumnos where ncontrol = '"+nc+"'";
         try {
