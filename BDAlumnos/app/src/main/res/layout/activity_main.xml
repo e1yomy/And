@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -13,20 +14,35 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="154dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+
+            android:src="@drawable/ico"
+            android:id="@+id/imageView2"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:text="Kardex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textAlignment="center"
+            android:textSize="30sp" />
 
         <Button
-            android:text="Insertar"
+            android:text="Registrar Alumno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button"
             android:onClick="insertar" />
 
         <Button
-            android:text="Ver"
+            android:text="Ver lista de alumnos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button2"

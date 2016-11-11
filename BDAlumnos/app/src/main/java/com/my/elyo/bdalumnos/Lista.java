@@ -1,11 +1,14 @@
 package com.my.elyo.bdalumnos;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -16,7 +19,7 @@ import android.widget.Toast;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Lista extends AppCompatActivity {
+public class Lista extends Activity {
     int accion;
     //1 consulta
     //2 actualizacion
@@ -31,6 +34,9 @@ public class Lista extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_lista);
         l=(ListView)findViewById(R.id.listView);
         t=(TextView)findViewById(R.id.textView4);
@@ -126,6 +132,12 @@ public class Lista extends AppCompatActivity {
             b2.setText("Eliminar");
         else
             b2.setText("Cancelar");
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        cargarDatos();
     }
 
 

@@ -19,6 +19,13 @@
         android:weightSum="1">
 
         <TextView
+            android:text="Registrar alumno en la base de datos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textSize="30sp"
+            android:paddingBottom="10dp" />
+        <TextView
             android:text="Número de control"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,7 +73,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp">
 
             <Button
                 android:text="Limpiar"

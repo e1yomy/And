@@ -1,14 +1,17 @@
 package com.my.elyo.bdalumnos;
 
+import android.app.Activity;
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Modificar extends AppCompatActivity {
+public class Modificar extends Activity {
 
     EditText e1;
     EditText e2;
@@ -18,6 +21,10 @@ public class Modificar extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_modificar);
 
 
@@ -26,6 +33,13 @@ public class Modificar extends AppCompatActivity {
         e3 = (EditText)findViewById(R.id.editText6);
         t = (TextView)findViewById(R.id.textView6);
         t.setText(BD.sel);
+        BD b=new BD(this);
+        String[] c = b.verClicado(b.getReadableDatabase());
+        e1.setText(c[0]);
+        e2.setText(c[1]);
+        e3.setText(c[2]);
+        Toast.makeText(getBaseContext(), "Para cancelar, presionar el boton de regresar.", Toast.LENGTH_SHORT).show();
+
     }
 
 

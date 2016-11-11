@@ -89,4 +89,11 @@ public class BD extends SQLiteOpenHelper {
         }
 
     }
+
+    public String[] verClicado(SQLiteDatabase db){
+        String sqlQuery = "SELECT * FROM Alumnos where ncontrol='"+numero+"';";
+        Cursor cursor = db.rawQuery(sqlQuery, null);
+        cursor.moveToFirst();
+        return new String[]{cursor.getString(0),cursor.getString(1),cursor.getString(2)};
+    }
 }
