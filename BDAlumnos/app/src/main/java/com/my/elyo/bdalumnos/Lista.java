@@ -1,6 +1,7 @@
 package com.my.elyo.bdalumnos;
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -44,7 +45,9 @@ public class Lista extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View itemC, int position, long id) {
                 TextView t=(TextView) itemC;
                 nc=t.getText().toString().substring(0,8);
-                Toast.makeText(getBaseContext(), nc, Toast.LENGTH_SHORT).show();
+                BD.sel=t.getText().toString();
+                BD.numero=nc;
+                //Toast.makeText(getBaseContext(), nc, Toast.LENGTH_SHORT).show();
                 Accion();
             }
         });
@@ -56,7 +59,8 @@ public class Lista extends AppCompatActivity {
             Toast.makeText(getBaseContext(), "Elim", Toast.LENGTH_SHORT).show();
         }
         else if (modif){
-            Toast.makeText(getBaseContext(), "Modif", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this,Modificar.class);
+            startActivity(i);
         }
         modif=false;
         elim=false;

@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Lista" />
-        <activity android:name=".Registro"></activity>
+        <activity android:name=".Registro" />
+        <activity android:name=".Modificar"></activity>
     </application>
 
 </manifest>

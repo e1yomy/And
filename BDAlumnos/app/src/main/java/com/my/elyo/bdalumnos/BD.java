@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.os.StrictMode;
 import android.provider.BaseColumns;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.sql.SQLDataException;
 
@@ -22,6 +23,7 @@ public class BD extends SQLiteOpenHelper {
     public static String nombre="";
     public static String apellido="";
     public static String error="";
+    public static String sel="";
 
     public static final int version_basededatos=1;
     private String sqlCreate = "CREATE TABLE alumnos (ncontrol TEXT , nombre TEXT , apellido TEXT, PRIMARY KEY (ncontrol));";
@@ -44,23 +46,29 @@ public class BD extends SQLiteOpenHelper {
     }
 
     public boolean insert(SQLiteDatabase db, String Nc, String nombre, String apellido){
-        String params = "('" + Nc+ "','" + nombre + "','" + apellido  + "')";
-        //String query = "INSERT INTO alumnos [(ncontrol, nombre, apellido)] VALUES " + params;
+        String params = "('" + Nc+ "','" + nombre + "', '" + apellido  + "')";
         String query = "INSERT INTO alumnos  VALUES " + params;
         try {
             db.execSQL(query);
             return true;
         }
         catch (Exception e){
+            String es=e.getMessage();
             return false;
         }
     }
-
-    public Cursor getInfo(BD bd){
-        SQLiteDatabase SQ= bd.getReadableDatabase();
-        String[] col= {"ncontrol","nombre","apellido"};
-        Cursor c= SQ.rawQuery("select * from alumnos",null);
-        return c;
+    public boolean actualizar(SQLiteDatabase d,String[] s)
+    {
+        try{
+            d.execSQL("UPDATE alumnos SET nombre='"+s[1]+"' WHERE ncontrol='"+numero+"'");
+            d.execSQL("UPDATE alumnos SET apellido='"+s[2]+"' WHERE ncontrol='"+numero+"'");
+            d.execSQL("UPDATE alumnos SET ncontrol='"+s[0]+"' WHERE ncontrol='"+numero+"'");
+                    return true;
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
     }
 
     public Cursor vertodo(SQLiteDatabase db){
