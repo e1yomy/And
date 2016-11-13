@@ -44,16 +44,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void servicio(View view) {
         ServicioGPS s = new ServicioGPS(getApplicationContext());
-
+        t.setText("");
     }
 
     public void verMapa(View view) {
         Intent i = new Intent(this,Mapa.class);
         startActivity(i);
+        t.setText("");
     }
 
     public void registro(View view) {
         actualizarTabla();
+        t.setText("");
     }
 
     public void actualizarTabla() {
