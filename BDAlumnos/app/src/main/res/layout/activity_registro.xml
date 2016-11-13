@@ -54,7 +54,8 @@
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/editText2"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:maxLength="30" />
         <TextView
             android:text="Apellidos"
             android:layout_width="match_parent"
@@ -68,7 +69,8 @@
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/editText3"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:maxLength="30" />
 
         <LinearLayout
             android:orientation="horizontal"
