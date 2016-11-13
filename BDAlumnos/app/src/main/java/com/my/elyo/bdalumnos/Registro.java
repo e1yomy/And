@@ -54,12 +54,17 @@ public class Registro extends Activity {
         }
         BD b = new BD(contextR);
         //b.InsertarDatos(b, s[0], s[1], s[2]);
+<<<<<<< HEAD
         if (!b.insert(b.getWritableDatabase(), s[0], s[1], s[2]))
             Toast.makeText(getBaseContext(), "Alumno ya existente.", Toast.LENGTH_SHORT).show();
         else {
             Toast.makeText(getBaseContext(), "Alumno agregado.", Toast.LENGTH_SHORT).show();
             Limpiar(new View(contextR));
         }
+=======
+        b.insert(b.getWritableDatabase(),s[0], s[1], s[2]);
+        Toast.makeText(getBaseContext(),"Alumno Agregado" , Toast.LENGTH_SHORT).show();
+>>>>>>> master
 
     }
     public void Limpiar(View view){
