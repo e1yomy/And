@@ -14,7 +14,6 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true">
 
         <LinearLayout
@@ -23,10 +22,15 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ico"
+                android:id="@+id/imageView" />
 
             <Button
                 android:text="Iniciar servicio de ubicación"
@@ -48,19 +52,20 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/button3"
                 android:onClick="registro"
-                />
+                android:visibility="invisible" />
 
             <ListView
                 android:layout_width="match_parent"
-                android:layout_height="265dp"
-                android:id="@+id/listView">
+                android:id="@+id/listView"
+                android:layout_height="1dp">
             </ListView>
             <Button
-                android:text="Limpiar base"
+                android:text="Limpiar ruta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/button4"
                 android:onClick="limpiarbase" />
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

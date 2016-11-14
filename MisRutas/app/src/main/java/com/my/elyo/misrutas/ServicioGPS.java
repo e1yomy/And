@@ -43,18 +43,17 @@ public class ServicioGPS extends Service implements LocationListener {
         try {
             if (gps) {
 
-                locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER, 1000, 2f, this);
+                locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER, 5000, 5f, this);
+                locationManager = (LocationManager) this.c.getSystemService(LOCATION_SERVICE);
                 if (locationManager != null) {
                     l = locationManager.getLastKnownLocation(locationManager.GPS_PROVIDER);
                     if (l != null) {
-
-                        if (lat != l.getLatitude() && lng != l.getLongitude()) {
-                            lat = l.getLatitude();
-                            lng = l.getLongitude();
-                            String[] s = {String.valueOf(lat), String.valueOf(lng)};
-                            b.insertRow(b.getWritableDatabase(), s, "lugares");
-                        }
-
+                            if (lat != l.getLatitude() && lng != l.getLongitude()) {
+                                lat = l.getLatitude();
+                                lng = l.getLongitude();
+                                String[] s = {String.valueOf(lat), String.valueOf(lng)};
+                                b.insertRow(b.getWritableDatabase(), s, "lugares");
+                            }
                     }
                 }
             } else {

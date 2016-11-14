@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     static TextView t;
     ListView l;
     B b;
+    String asd="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +42,14 @@ public class MainActivity extends AppCompatActivity {
         b = new B(contextR, "gps") ;
         b.actualizarid(b.getReadableDatabase());
 
-    }
 
+        l.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View itemC, int position, long id) {
+                TextView t=(TextView) itemC;
+            }
+        });
+    }
     public void servicio(View view) {
         ServicioGPS s = new ServicioGPS(getApplicationContext());
         t.setText("");

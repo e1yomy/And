@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
@@ -18,12 +19,14 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.ArrayList;
 
 public class Mapa extends FragmentActivity implements OnMapReadyCallback, Runnable{
 
-
+    LatLng ubi;
     private GoogleMap m;
     Context contextR = this;
     public View vi;
@@ -52,6 +55,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback, Runnab
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)==PackageManager.PERMISSION_GRANTED){
             m.getUiSettings().setZoomControlsEnabled(true);
             m.getUiSettings().setCompassEnabled(true);
+            m.getUiSettings().setMyLocationButtonEnabled(true);
         }
         if(lista.size()>0)
             mostrarlista();
@@ -75,21 +79,15 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback, Runnab
         //hacer variable para el primer elemento
         //hacer variable para el siguiente elemento
         //si la lista es diferente de 0
+
         m.clear();
+        Polyline p;
         can=lista.size();
         if(lista.size()>0) {
             for (int i = 0; i < lista.size() - 1; i++) {
-                //if(i==0)
-                //primerpunto = lista.get(i);
-                //segundo = lista.get(i+1);
-                //else
-                //
-                //
-                //
-                //
-                m.addMarker(new MarkerOptions().position(lista.get(i)));
+                ubi=lista.get(i);
+                p=m.addPolyline(new PolylineOptions().add(ubi,lista.get(i+1)).width(5f).color(Color.MAGENTA));
                 m.animateCamera(CameraUpdateFactory.newLatLngZoom(lista.get(i),18));
-
             }
         }
     }
