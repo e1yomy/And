@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="21"
+    density="xhdpi"
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="300948988916463"
+    token="3343361279631725051"
+    verifier="COLD_SWAP_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <build
+        timestamp="300558571810873"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="D:\A\And\AndroidGalleryView\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="300857046533721"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\A\And\AndroidGalleryView\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="300948988916463"
+        verifier="COLD_SWAP_REQUESTED" />
+
+</instant-run>

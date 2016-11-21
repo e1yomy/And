@@ -56,6 +56,9 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback, Runnab
             m.getUiSettings().setZoomControlsEnabled(true);
             m.getUiSettings().setCompassEnabled(true);
             m.getUiSettings().setMyLocationButtonEnabled(true);
+            m.getUiSettings().setAllGesturesEnabled(true);
+            m.getUiSettings().setScrollGesturesEnabled(true);
+            m.getUiSettings().setZoomGesturesEnabled(true);
         }
         if(lista.size()>0)
             mostrarlista();
@@ -69,6 +72,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback, Runnab
                 lista.clear();
                 do {
                     lista.add(new LatLng(cr.getDouble(1),cr.getDouble(2)));
+
                 } while (cr.moveToNext());
             }
         } catch (Exception ex) {
@@ -76,9 +80,6 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback, Runnab
         }
     }
     public void mostrarlista(){
-        //hacer variable para el primer elemento
-        //hacer variable para el siguiente elemento
-        //si la lista es diferente de 0
 
         m.clear();
         Polyline p;
@@ -86,8 +87,8 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback, Runnab
         if(lista.size()>0) {
             for (int i = 0; i < lista.size() - 1; i++) {
                 ubi=lista.get(i);
-                p=m.addPolyline(new PolylineOptions().add(ubi,lista.get(i+1)).width(5f).color(Color.MAGENTA));
-                m.animateCamera(CameraUpdateFactory.newLatLngZoom(lista.get(i),18));
+                p=m.addPolyline(new PolylineOptions().add(ubi,lista.get(i+1)).width(5f).color(Color.DKGRAY));
+                m.animateCamera(CameraUpdateFactory.newLatLngZoom(lista.get(i),15));
             }
         }
     }

@@ -43,7 +43,7 @@ public class ServicioGPS extends Service implements LocationListener {
         try {
             if (gps) {
 
-                locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER, 5000, 5f, this);
+                locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER, 5000, 10f, this);
                 locationManager = (LocationManager) this.c.getSystemService(LOCATION_SERVICE);
                 if (locationManager != null) {
                     l = locationManager.getLastKnownLocation(locationManager.GPS_PROVIDER);

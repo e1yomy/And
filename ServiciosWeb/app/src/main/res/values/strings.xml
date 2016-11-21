@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Servicios Web</string>
+    <string name="action_sum">Suma</string>
+    <string name="action_sub">Resta</string>
+    <string name="action_mul">Multiplicación</string>
+    <string name="action_div">División</string>
+    <string name="action_clear">Limpiar</string>
+    <string name="hint_res">Resultado</string>
+    <string name="hint_num1">Número 1</string>
+    <string name="hint_num2">Número 2</string>
+</resources>
