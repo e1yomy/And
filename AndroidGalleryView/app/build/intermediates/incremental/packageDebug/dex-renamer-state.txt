@@ -1,4 +1,4 @@
-#Sun Nov 20 11:39:03 MST 2016
+#Sun Nov 20 23:45:54 MST 2016
 base.0=D\:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0aace298ff1112ef69347a1754d05817697538ee
 renamed.1=classes.dex
 renamed.0=classes2.dex

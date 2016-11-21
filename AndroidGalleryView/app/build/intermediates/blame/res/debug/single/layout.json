@@ -20,12 +20,12 @@
         "source": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_list_menu_item_radio.xml"
-    },
-    {
         "merged": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_tab.xml",
         "source": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_tab.xml"
+    },
+    {
+        "merged": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
         "merged": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_decor.xml",
@@ -64,12 +64,12 @@
         "source": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_decor_overlay.xml"
     },
     {
-        "merged": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
-        "source": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_include.xml",
         "source": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_activity_chooser_view_include.xml"
+    },
+    {
+        "merged": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "D:\\A\\And\\AndroidGalleryView\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",

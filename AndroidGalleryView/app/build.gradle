@@ -3,18 +3,18 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 19
     buildToolsVersion "24.0.1"
-
     defaultConfig {
-        applicationId "androidinterview.com.androidgalleryview"
+        applicationId 'androidinterview.com.androidgalleryview'
         minSdkVersion 8
         targetSdkVersion 21
     }
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
+    }
+    productFlavors {
     }
 }
 

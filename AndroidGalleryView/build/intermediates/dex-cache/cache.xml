@@ -3,15 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="D:\A\And\AndroidGalleryView\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="2df5006a116a8e5e27420da7b2f0de0b9bf734dd">
-        <dex dex="D:\A\And\AndroidGalleryView\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0aace298ff1112ef69347a1754d05817697538ee\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\elyo_\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
         jumboMode="true"
         optimize="true"
@@ -30,11 +21,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\A\And\AndroidGalleryView\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="82230386443a0e58806722bdc600c3859f95c91c">
+        <dex dex="D:\A\And\AndroidGalleryView\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0aace298ff1112ef69347a1754d05817697538ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\A\And\AndroidGalleryView\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="d514e2fd45e18c23a6ee2818943b27e32db4d1ca">
+        sha1="91802b763acb153e2df5e7673db82d432a8d8b3c">
         <dex dex="D:\A\And\AndroidGalleryView\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_daacfb42a094be518761753cff1e911c9552c874\classes.dex" />
     </item>
     <item
