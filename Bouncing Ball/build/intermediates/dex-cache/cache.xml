@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\elyo_\Box Sync\Trabajos 9 semestre\Android\Bouncing Ball\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\elyo_\Box Sync\Trabajos 9 semestre\Android\Bouncing Ball\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-22.2.1_5470d839cbffa5e4843e725b199f5a46c8065092.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\elyo_\Box Sync\Trabajos 9 semestre\Android\Bouncing Ball\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Users\elyo_\Box Sync\Trabajos 9 semestre\Android\Bouncing Ball\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1_e854691c251a8c638681747fbb3b84d18b92417b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\elyo_\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Users\elyo_\Box Sync\Trabajos 9 semestre\Android\Bouncing Ball\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1_ee29d547247179bbe9213f7d32715471b2ffe49c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\elyo_\Box Sync\Trabajos 9 semestre\Android\Bouncing Ball\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Users\elyo_\Box Sync\Trabajos 9 semestre\Android\Bouncing Ball\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-22.2.1_3a1be338ed8fad094ac461ecc8671d5b4fd9d4e3.jar" />
+    </item>
+
+</items>

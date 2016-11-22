@@ -1,0 +1,7 @@
+#Mon Oct 03 23:41:15 MDT 2016
+base.0=C\:\\Users\\elyo_\\OneDrive\\Tec\\9Noveno\\Android\\ServicioMusica\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_69a14458a7fd726fab15180dfde2fde1f4b1ca8b
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\elyo_\\OneDrive\\Tec\\9Noveno\\Android\\ServicioMusica\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_6c0f6d8bcb99e976ac009166846a31054bc45b96\\classes.dex
+base.1=C\:\\Users\\elyo_\\OneDrive\\Tec\\9Noveno\\Android\\ServicioMusica\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_6c0f6d8bcb99e976ac009166846a31054bc45b96
+file.0=C\:\\Users\\elyo_\\OneDrive\\Tec\\9Noveno\\Android\\ServicioMusica\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_69a14458a7fd726fab15180dfde2fde1f4b1ca8b\\classes.dex

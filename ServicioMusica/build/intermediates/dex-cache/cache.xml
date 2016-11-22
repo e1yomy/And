@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\ServicioMusica\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="28bf5365a1a16ec2a1c74c397d2ad09936b17b5c">
+        <dex dex="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\ServicioMusica\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_69a14458a7fd726fab15180dfde2fde1f4b1ca8b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\ServicioMusica\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\ServicioMusica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.2.1_32986313647b4f1cc756813e2dc3c62222b0db20\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\ServicioMusica\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\ServicioMusica\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.2.1_b0df3ea009c13eb0eac143469a5a20b3c15a80bb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\elyo_\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\ServicioMusica\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.2.1_ee29d547247179bbe9213f7d32715471b2ffe49c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\ServicioMusica\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\ServicioMusica\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.2.1_6a351fa15533862fb7a592e9ee3fdac30d41de2d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\ServicioMusica\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1d72dde745bb737262e4dfaf390e6ec07cac51ff">
+        <dex dex="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\ServicioMusica\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6c0f6d8bcb99e976ac009166846a31054bc45b96\classes.dex" />
+    </item>
+
+</items>

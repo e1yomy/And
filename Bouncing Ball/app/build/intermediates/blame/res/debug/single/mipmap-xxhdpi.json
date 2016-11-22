@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\elyo_\\Box Sync\\Trabajos 9 semestre\\Android\\Bouncing Ball\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\elyo_\\Box Sync\\Trabajos 9 semestre\\Android\\Bouncing Ball\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\elyo_\\Box Sync\\Trabajos 9 semestre\\Android\\Bouncing Ball\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_pelota.png",
+        "source": "C:\\Users\\elyo_\\Box Sync\\Trabajos 9 semestre\\Android\\Bouncing Ball\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_pelota.png"
+    },
+    {
+        "merged": "C:\\Users\\elyo_\\Box Sync\\Trabajos 9 semestre\\Android\\Pruebas\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\elyo_\\Box Sync\\Trabajos 9 semestre\\Android\\Pruebas\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\elyo_\\Box Sync\\Trabajos 9 semestre\\Android\\Pruebas\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_pelota.png",
+        "source": "C:\\Users\\elyo_\\Box Sync\\Trabajos 9 semestre\\Android\\Pruebas\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_pelota.png"
+    }
+]

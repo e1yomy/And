@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="21"
+    density="xhdpi"
+    format="7"
+    timestamp="66340058268777"
+    token="-3884314770417892322" >
+
+    <task
+        name="javac"
+        duration="1226" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="328" />
+    <task
+        name="verifier"
+        duration="15" />
+
+    <artifact
+        location="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\Mislugares_Moviles\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+        type="DEX" />
+
+    <build timestamp="65835424520868" >
+        <artifact
+            location="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\Mislugares_Moviles\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="66340058268777" >
+        <artifact
+            location="C:\Users\elyo_\OneDrive\Tec\9Noveno\Android\Mislugares_Moviles\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>
