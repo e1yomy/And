@@ -24,7 +24,7 @@ import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.ArrayList;
 
-public class Mapa extends FragmentActivity implements OnMapReadyCallback{
+public class Mapa extends FragmentActivity implements OnMapReadyCallback, Runnable{
 
     LatLng ubi;
     private GoogleMap m;
@@ -33,6 +33,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback{
     ArrayList<LatLng> lista=new ArrayList<>();
     B b;
     int can;
+    Thread h1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +43,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback{
         mapFragment.getMapAsync(this);
         b= new B(contextR,"gps");
         hacerlista();
+        h1=new Thread(this);
     }
 
 
@@ -60,6 +62,7 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback{
         }
         if(lista.size()>0)
             mostrarlista();
+        h1.start();
     }
     public void hacerlista(){
         Cursor cr = b.selectAll(b.getReadableDatabase());
@@ -76,21 +79,39 @@ public class Mapa extends FragmentActivity implements OnMapReadyCallback{
 
         }
     }
-    public void mostrarlista() {
+    public void mostrarlista(){
 
         m.clear();
-
         Polyline p;
-        can = lista.size();
-        if (lista.size() > 0) {
+        can=lista.size();
+        if(lista.size()>0) {
             for (int i = 0; i < lista.size() - 1; i++) {
-                ubi = lista.get(i);
-                p = m.addPolyline(new PolylineOptions().add(ubi, lista.get(i + 1)).width(3f).color(Color.RED));
-                m.animateCamera(CameraUpdateFactory.newLatLngZoom(lista.get(i), 18));
-                m.addMarker(new MarkerOptions()
-                        .position(lista.get(i+1))
-                        .title("Aqui estuve"));
+                ubi=lista.get(i);
+                p=m.addPolyline(new PolylineOptions().add(ubi,lista.get(i+1)).width(5f).color(Color.DKGRAY));
+                m.animateCamera(CameraUpdateFactory.newLatLngZoom(lista.get(i),15));
+            }
+        }
+    }
 
+    @Override
+    public void run() {
+        while(true){
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        hacerlista();
+                        if(can<lista.size()) {
+                            mostrarlista();
+                        }
+                    }
+                    catch (Exception ex){}
+                }
+            });
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
     }

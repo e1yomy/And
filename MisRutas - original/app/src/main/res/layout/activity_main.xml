@@ -26,19 +26,33 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView" />
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ico"
+                android:id="@+id/imageView" />
+
             <Button
-                android:text="Servicio"
+                android:text="Iniciar servicio de ubicación"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/button"
                 android:onClick="servicio"/>
 
             <Button
-                android:text="Mi ruta"
+                android:text="Mostrar ruta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/button2"
                 android:onClick="verMapa"/>
+
+            <Button
+                android:text="Actualizar lista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:onClick="registro"
+                android:visibility="invisible" />
 
             <ListView
                 android:layout_width="match_parent"
@@ -46,7 +60,7 @@
                 android:layout_height="1dp">
             </ListView>
             <Button
-                android:text="reiniciar"
+                android:text="Limpiar ruta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/button4"
