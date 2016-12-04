@@ -1,0 +1,7 @@
+#Fri Dec 02 16:22:16 MST 2016
+base.0=D\:\\A\\And\\Carrusel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_d9ebb17cb5663520a1fb05c1fd3477b9694d9121
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\A\\And\\Carrusel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_3c77eab7d9be3e2cba428b58ee8c44b3e2d31d66\\classes.dex
+base.1=D\:\\A\\And\\Carrusel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_3c77eab7d9be3e2cba428b58ee8c44b3e2d31d66
+file.0=D\:\\A\\And\\Carrusel\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_d9ebb17cb5663520a1fb05c1fd3477b9694d9121\\classes.dex
