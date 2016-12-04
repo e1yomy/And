@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferencias_principal"
+    android:title="@string/Configurar"
+    android:icon="@mipmap/ic_launcher"
+>
+    <PreferenceCategory android:title="@string/ConfiguracionesAudio">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="efectos"
+            android:title="@string/ReproducirSonidos"
+             android:summary="@string/ReproducirSonidosMensaje"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/ConfiguracionesGraficas">
+
+        <EditTextPreference
+            android:key="fragmentos"
+            android:title="@string/NoFragmentos"
+            android:summary="@string/NoFragmentosMensaje"
+            android:defaultValue="5"
+            android:inputType="number"
+            />
+        <ListPreference
+            android:key="graficos"
+            android:title="@string/TipoGraficos"
+            android:summary="@string/TipoGraficosMensaje"
+            android:entries="@array/tiposGraficos"
+            android:entryValues="@array/tiposGraficosValores"
+            android:defaultValue="1"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/ModoMulti">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="multijugador"
+            android:title="@string/ActivarMultijugador"
+            />
+        <EditTextPreference
+            android:key="maxjugadores"
+            android:title="@string/MaxJugadores"
+            android:defaultValue="2"
+            android:inputType="number"
+            />
+        <ListPreference
+            android:key="conexion"
+            android:title="@string/TipoConexion"
+            android:summary="@string/TipoConexionMensaje"
+            android:entries="@array/tiposConexion"
+            android:entryValues="@array/tiposConexionValores"
+            android:defaultValue="1"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

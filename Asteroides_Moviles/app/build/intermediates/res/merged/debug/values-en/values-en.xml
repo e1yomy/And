@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AcercaMensaje">Este programa ha sido desarrollado como ejemplo en el curso de Programación para dispositivos móviles, para demostrar cómo se pueden lanzar nuevas actividades desde la actividad principal.</string>
+    <string name="Acercade">About</string>
+    <string name="ActivarMultijugador">Enable multiplayer mode</string>
+    <string name="Arrancar">Play</string>
+    <string name="Buscar"> Search </string>
+    <string name="ConfiguracionesAudio">Audio settings</string>
+    <string name="ConfiguracionesGraficas">Graphic settings</string>
+    <string name="Configurar">Settings</string>
+    <string name="MaxJugadores">Maximum players</string>
+    <string name="ModoMulti">Multiplayer mode</string>
+    <string name="NoFragmentos">Fragments number</string>
+    <string name="NoFragmentosMensaje">How many parts an asteroid is divided</string>
+    <string name="Preferencias">Settings </string>
+    <string name="ReproducirSonidos">Enable sounds</string>
+    <string name="ReproducirSonidosMensaje">Activate sound effects</string>
+    <string name="Salir">Exit</string>
+    <string name="TipoConexion">Connection type</string>
+    <string name="TipoConexionMensaje">Select preferred conecction</string>
+    <string name="TipoGraficos">Graphics type</string>
+    <string name="TipoGraficosMensaje">Choose the graphic presentation</string>
+    <string name="action_settings"> Settings </string>
+    <string name="app_name">Asteroides</string>
+    <string name="title_activity_preferencia">Settings</string>
+    <string name="tituloAplicacion">Asteroides</string>
+</resources>

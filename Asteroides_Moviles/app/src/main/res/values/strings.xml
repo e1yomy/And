@@ -1,0 +1,29 @@
+<resources>
+    <string name="Arrancar">Jugar</string>
+    <string name="Configurar">Configuraciones</string>
+    <string name="Acercade">Acerca de </string>
+    <string name="Salir">Salir</string>
+    <string name="tituloAplicacion">Asteroides</string>
+    <string name="app_name">Asteroides</string>
+    <string name="action_settings"> Configuración </string>
+    <string name="Preferencias"> Preferencias </string>
+    <string name="Buscar"> Buscar </string>
+    <string name="title_activity_preferencia">Configuraciones</string>
+
+    <string name="AcercaMensaje">Este programa ha sido desarrollado como ejemplo en el curso de Programación para dispositivos móviles, para demostrar cómo se pueden lanzar nuevas actividades desde la actividad principal.</string>
+    <string name="ConfiguracionesAudio">Configuraciones de audio</string>
+    <string name="ConfiguracionesGraficas">Configuraciones gráficas</string>
+    <string name="ModoMulti">Modo multijugador</string>
+    <string name="ReproducirSonidos">Reproducir sonidos</string>
+    <string name="ReproducirSonidosMensaje">Se reproducen efectos de sonido</string>
+    <string name="NoFragmentos">Número de fragmentos</string>
+    <string name="NoFragmentosMensaje">En cuántos trozos se divide un asteroide</string>
+    <string name="TipoGraficos">Tipo de gráficos</string>
+    <string name="TipoGraficosMensaje">Se escoge la presentacin de gráficos</string>
+    <string name="ActivarMultijugador">Activar modo multijugador</string>
+    <string name="MaxJugadores">Máximo de jugadores</string>
+    <string name="TipoConexion">Tipo de conexión</string>
+    <string name="TipoConexionMensaje">Seleccionar conexión preferida</string>
+
+</resources>
+

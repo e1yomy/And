@@ -1,0 +1,463 @@
+[
+    {
+        "outputFile": "D:\\A\\And\\Asteroides_Moviles\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 230,
+                    "endOffset": 281
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 519,
+                        "endColumn": 230,
+                        "endOffset": 745
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 286,
+                    "endColumn": 42,
+                    "endOffset": 324
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 109,
+                        "endColumn": 42,
+                        "endOffset": 147
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 329,
+                    "endColumn": 71,
+                    "endOffset": 396
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1363,
+                        "endColumn": 71,
+                        "endOffset": 1430
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 401,
+                    "endColumn": 41,
+                    "endOffset": 438
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endColumn": 41,
+                        "endOffset": 54
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 443,
+                    "endColumn": 43,
+                    "endOffset": 482
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 407,
+                        "endColumn": 43,
+                        "endOffset": 446
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 487,
+                    "endColumn": 63,
+                    "endOffset": 546
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 751,
+                        "endColumn": 63,
+                        "endOffset": 810
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 551,
+                    "endColumn": 68,
+                    "endOffset": 615
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 816,
+                        "endColumn": 68,
+                        "endOffset": 880
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 620,
+                    "endColumn": 47,
+                    "endOffset": 663
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 60,
+                        "endColumn": 47,
+                        "endOffset": 103
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 668,
+                    "endColumn": 56,
+                    "endOffset": 720
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1436,
+                        "endColumn": 56,
+                        "endOffset": 1488
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 725,
+                    "endColumn": 54,
+                    "endOffset": 775
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 886,
+                        "endColumn": 54,
+                        "endOffset": 936
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 780,
+                    "endColumn": 57,
+                    "endOffset": 833
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1080,
+                        "endColumn": 57,
+                        "endOffset": 1133
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 838,
+                    "endColumn": 85,
+                    "endOffset": 919
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1139,
+                        "endColumn": 85,
+                        "endOffset": 1220
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 924,
+                    "endColumn": 50,
+                    "endOffset": 970
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 355,
+                        "endColumn": 50,
+                        "endOffset": 401
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 975,
+                    "endColumn": 59,
+                    "endOffset": 1030
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 942,
+                        "endColumn": 59,
+                        "endOffset": 997
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1035,
+                    "endColumn": 75,
+                    "endOffset": 1106
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1003,
+                        "endColumn": 75,
+                        "endOffset": 1074
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1111,
+                    "endColumn": 38,
+                    "endOffset": 1145
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 153,
+                        "endColumn": 38,
+                        "endOffset": 187
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1150,
+                    "endColumn": 56,
+                    "endOffset": 1202
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1494,
+                        "endColumn": 56,
+                        "endOffset": 1546
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1207,
+                    "endColumn": 75,
+                    "endOffset": 1278
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1552,
+                        "endColumn": 75,
+                        "endOffset": 1623
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1283,
+                    "endColumn": 54,
+                    "endOffset": 1333
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1226,
+                        "endColumn": 54,
+                        "endOffset": 1276
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1338,
+                    "endColumn": 79,
+                    "endOffset": 1413
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1282,
+                        "endColumn": 79,
+                        "endOffset": 1357
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1418,
+                    "endColumn": 54,
+                    "endOffset": 1468
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 299,
+                        "endColumn": 54,
+                        "endOffset": 349
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1473,
+                    "endColumn": 47,
+                    "endOffset": 1516
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 250,
+                        "endColumn": 47,
+                        "endOffset": 293
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1521,
+                    "endColumn": 63,
+                    "endOffset": 1580
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 452,
+                        "endColumn": 63,
+                        "endOffset": 511
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1585,
+                    "endColumn": 55,
+                    "endOffset": 1636
+                },
+                "from": {
+                    "file": "D:\\A\\And\\Asteroides_Moviles\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 193,
+                        "endColumn": 55,
+                        "endOffset": 244
+                    }
+                }
+            }
+        ]
+    }
+]
