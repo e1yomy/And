@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gmaps</string>
+    <string name="title_activity_main">Map</string>
+    <string name="boton1">Ir al Tec</string>
+    <string name="boton2">Aqui estoy</string>
+    <string name="boton3">+ marcador</string>
+</resources>
